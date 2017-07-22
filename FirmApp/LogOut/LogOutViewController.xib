@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogOutViewController" customModule="FirmApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="bRg-At-hfs" id="75p-xk-m47"/>
+                <outlet property="logOutButton" destination="g2Q-fl-QDq" id="q4M-rt-XVW"/>
+                <outlet property="textAdviceLabel" destination="VnB-6f-hzb" id="sx8-jc-EO6"/>
+                <outlet property="transparentBackgroundView" destination="w6p-hi-wps" id="7Rb-w5-2GT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6p-hi-wps" userLabel="Transparent Background">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brr-kB-2Dy" userLabel="Modal View">
+                    <rect key="frame" x="38" y="97" width="299" height="448"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Esta seguro que desea salir de la aplicacion?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VnB-6f-hzb">
+                            <rect key="frame" x="36" y="62" width="226" height="64.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64.5" id="JUj-bF-9JG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbE-Lm-a8c" userLabel="Close Button">
+                            <rect key="frame" x="266" y="8" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="aMX-Zl-ltv"/>
+                                <constraint firstAttribute="width" constant="25" id="bjn-1F-12h"/>
+                            </constraints>
+                            <state key="normal" image="icon-close"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="Y62-Lh-Wua"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2Q-fl-QDq">
+                            <rect key="frame" x="8" y="338" width="283" height="43"/>
+                            <color key="backgroundColor" red="0.39985925141168843" green="0.80131858031674208" blue="0.16152480474990777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="1WD-QA-BZD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="SALIR">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="logOutButtonAction:" destination="-1" eventType="touchUpInside" id="P3r-J1-pJf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRg-At-hfs">
+                            <rect key="frame" x="8" y="397" width="283" height="43"/>
+                            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="9tw-UG-HhH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="CANCELAR">
+                                <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="2il-Xf-CPk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="VnB-6f-hzb" firstAttribute="top" secondItem="brr-kB-2Dy" secondAttribute="top" constant="62" id="5nE-pA-91O"/>
+                        <constraint firstItem="bRg-At-hfs" firstAttribute="top" secondItem="g2Q-fl-QDq" secondAttribute="bottom" constant="16" id="Ewq-tc-0wd"/>
+                        <constraint firstAttribute="trailing" secondItem="VnB-6f-hzb" secondAttribute="trailing" constant="37" id="IHt-v7-aZN"/>
+                        <constraint firstAttribute="bottom" secondItem="bRg-At-hfs" secondAttribute="bottom" constant="8" id="OdB-pG-V5x"/>
+                        <constraint firstItem="g2Q-fl-QDq" firstAttribute="leading" secondItem="brr-kB-2Dy" secondAttribute="leading" constant="8" id="Ut6-xh-ebl"/>
+                        <constraint firstItem="VnB-6f-hzb" firstAttribute="leading" secondItem="brr-kB-2Dy" secondAttribute="leading" constant="36" id="Vrl-BC-PlP"/>
+                        <constraint firstAttribute="trailing" secondItem="bRg-At-hfs" secondAttribute="trailing" constant="8" id="XwW-XZ-KSB"/>
+                        <constraint firstAttribute="trailing" secondItem="BbE-Lm-a8c" secondAttribute="trailing" constant="8" id="dm5-fT-V2M"/>
+                        <constraint firstAttribute="trailing" secondItem="g2Q-fl-QDq" secondAttribute="trailing" constant="8" id="hrU-zz-gfx"/>
+                        <constraint firstItem="bRg-At-hfs" firstAttribute="leading" secondItem="brr-kB-2Dy" secondAttribute="leading" constant="8" id="u6t-eD-Ivk"/>
+                        <constraint firstItem="BbE-Lm-a8c" firstAttribute="top" secondItem="brr-kB-2Dy" secondAttribute="top" constant="8" id="wUO-aW-Byw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="brr-kB-2Dy" secondAttribute="bottom" constant="122" id="DDS-to-urt"/>
+                <constraint firstAttribute="trailing" secondItem="brr-kB-2Dy" secondAttribute="trailing" constant="38" id="bBu-5o-gs2"/>
+                <constraint firstItem="brr-kB-2Dy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="bf0-wW-fNN"/>
+                <constraint firstItem="brr-kB-2Dy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="oqt-dU-EqF"/>
+                <constraint firstAttribute="trailing" secondItem="w6p-hi-wps" secondAttribute="trailing" id="se5-sW-8ge"/>
+                <constraint firstAttribute="bottom" secondItem="w6p-hi-wps" secondAttribute="bottom" id="y5s-Hl-rbs"/>
+                <constraint firstItem="w6p-hi-wps" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yPE-fJ-HDV"/>
+                <constraint firstItem="w6p-hi-wps" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yUj-v1-NeX"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-close" width="33" height="33"/>
+    </resources>
+</document>

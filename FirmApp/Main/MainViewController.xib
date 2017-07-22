@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="FirmApp" customModuleProvider="target">
+            <connections>
+                <outlet property="borderLineView" destination="R9d-AV-nAU" id="dHo-Vp-KNM"/>
+                <outlet property="childView" destination="Oso-56-9Jn" id="u2N-vu-4Dn"/>
+                <outlet property="documentsButton" destination="icS-Lo-nu7" id="MWY-OU-FWp"/>
+                <outlet property="keysButton" destination="aTt-xu-chp" id="37p-vO-Tp3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9d-AV-nAU">
+                    <rect key="frame" x="0.0" y="64" width="375" height="5"/>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="OUK-WN-Xh0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icS-Lo-nu7">
+                    <rect key="frame" x="0.0" y="69" width="183.5" height="50"/>
+                    <color key="backgroundColor" red="0.25098039215686274" green="0.49411764705882355" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fqL-vB-j5G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Documentos" image="icon-document-white"/>
+                    <connections>
+                        <action selector="tabButtonPressed:" destination="-1" eventType="touchUpInside" id="aHI-vp-TJ6"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-56-9Jn">
+                    <rect key="frame" x="0.0" y="125" width="375" height="542"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTt-xu-chp">
+                    <rect key="frame" x="191.5" y="69" width="183.5" height="50"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6Sr-Xa-lWc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Llaves" image="icon-key-gray">
+                        <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tabButtonPressed:" destination="-1" eventType="touchUpInside" id="Anw-EQ-pyQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Oso-56-9Jn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3BY-ZU-bGZ"/>
+                <constraint firstItem="R9d-AV-nAU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="4dQ-xB-2RT"/>
+                <constraint firstAttribute="trailing" secondItem="aTt-xu-chp" secondAttribute="trailing" id="Khp-7d-Qk5"/>
+                <constraint firstItem="icS-Lo-nu7" firstAttribute="width" secondItem="aTt-xu-chp" secondAttribute="width" id="P04-1y-GgQ"/>
+                <constraint firstAttribute="trailing" secondItem="R9d-AV-nAU" secondAttribute="trailing" id="Tx3-rz-iEB"/>
+                <constraint firstItem="Oso-56-9Jn" firstAttribute="top" secondItem="icS-Lo-nu7" secondAttribute="bottom" constant="6" id="UlL-go-9Mq"/>
+                <constraint firstItem="R9d-AV-nAU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h4f-Ir-QO0"/>
+                <constraint firstItem="aTt-xu-chp" firstAttribute="top" secondItem="R9d-AV-nAU" secondAttribute="bottom" id="hMo-Lx-at8"/>
+                <constraint firstItem="icS-Lo-nu7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hOo-Af-Hwd"/>
+                <constraint firstAttribute="bottom" secondItem="Oso-56-9Jn" secondAttribute="bottom" id="ibf-wg-FUE"/>
+                <constraint firstItem="icS-Lo-nu7" firstAttribute="top" secondItem="R9d-AV-nAU" secondAttribute="bottom" id="lji-Yx-ehP"/>
+                <constraint firstAttribute="trailing" secondItem="Oso-56-9Jn" secondAttribute="trailing" id="uOs-QV-I9x"/>
+                <constraint firstItem="aTt-xu-chp" firstAttribute="leading" secondItem="icS-Lo-nu7" secondAttribute="trailing" constant="8" id="vs3-mM-C7N"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-document-white" width="30" height="30"/>
+        <image name="icon-key-gray" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,178 @@
+/*
+ Localizable.strings
+ SeguriData
+ 
+ Created by mikel.sanchez.local on 12/4/16.
+ Copyright © 2016 Babel. All rights reserved.
+ */
+
+"misc.error"            = "Error";
+"misc.ok"               = "Ok";
+"misc.delete"           = "Delete";
+"misc.passwordNotSet"   = "Please insert your password";
+"misc.forgetPassword"   = "Forget password";
+"misc.wrongPassword"    = "You might be typing the wrong password. Please try again ";
+"misc.missingField"     = "One or more required field(s) are missing";
+"misc.missingFields"    = "Please, to continue complete both fields";
+"misc.missingURLName"   = "Please insert the URL name";
+"misc.missingURL"      = "Please insert a URL";
+"misc.insertValidURL"   = "Please insert a valid URL";
+"misc.notResponseFromServer" = "Not Response from Server";
+
+
+// BaseViewController
+"BaseViewController.exit" = "Exit";
+"BaseViewController.back" = "Back";
+
+// SplashViewController
+"SplashViewController.text" = "Digital Sign, smart and fast from your mobile";
+
+// LoginViewController
+"LoginViewController.user" = "User";
+"LoginViewController.password" = "Password";
+"LoginViewController.show_characters" = "Show Characters";
+"LoginViewController.session" = "Remind Password";
+"LoginViewController.error_user_pass" = "Please insert user and password";
+"LoginViewController.error_user" = "Missing Field: Please insert your username";
+"LoginViewController.error_pass" = "Missing Field: Please nsert your password";
+"LoginViewController.session_warn" = "Due to security seasons it's recomended to insert the password manually";
+"LoginViewController.log_in" = "Enter";
+"LoginViewController.alertNotTypedFields" = "Please";
+"LoginViewController.notValidUser" = "User not found on this server. Please verify your access data and try again";
+"LoginViewController.login_URLName" = "Connecting to: ";
+
+// MainViewController
+"MainViewController.documents" = "Documents";
+"MainViewController.keys" = "Keys";
+
+// LogOutViewController
+"LogOutViewController.advice" = "Are you sure you want to quit?";
+"LogOutViewController.log_out" = "Quit";
+"LogOutViewController.cancel" = "Cancel";
+
+// URLViewController
+"URLViewController.add_url" = "Add URL";
+"URLViewController.url_name" = "URL name";
+"URLViewController.url" = "URL";
+"URLViewController.add" = "Add";
+"URLViewController.asign" = "Asign Key";
+"URLViewController.modify_url" = "Modify URL";
+"URLViewController.save" = "Save";
+"URLViewController.delete" = "Delete URL";
+
+
+//URLPasswordViewController
+"URLPasswordViewViewController.URLExists" = "This URL already exists, Modify it to continue";
+"URLPasswordViewViewController.URLNameExists" = "An URL with this name already exists, Modify it to continue";
+"URLPasswordViewController.almostOne" = "FirmApp needs to have almost one URL";
+"URLPasswordViewController.title_add" = "Please insert the password for adding the URL";
+"URLPasswordViewController.title_modify" = "Please insert the password to modify the URL";
+"URLPasswordViewController.title_delete1" = "You are going to delete";
+"URLPasswordViewController.title_delete2" = "\nPlease insert the password to continue";
+"URLPasswordViewController.title_delete3" = "Please insert the reason of cancelation on field Observations";
+"URLPasswordViewController.title_sign" = "Please insert the password to sign the document";
+"URLPasswordViewController.title_deny" = "Please insert the password to cancel ";
+"URLPasswordViewController.password" = "Password";
+"URLPasswordViewController.show_password" = "Show Password";
+"URLPasswordViewController.remind_password" = "Remind Password";
+"URLPasswordViewController.security" = "Due to security reasons it's recomended adding the password manually";
+"URLPasswordViewController.observations" = "Observations";
+"URLPasswordViewController.add" = "Add";
+"URLPasswordViewController.modify" = "Save";
+"URLPasswordViewController.delete" = "Delete";
+"URLPasswordViewController.cancel" = "Cancel";
+"URLPasswordViewController.sign" = "Sign";
+"URLPasswordViewController.deny" = "Deny";
+
+// URLTableViewController
+"URLTableViewController.remaining_one" = "Remaining";
+"URLTableViewController.remaining_several" = "Remaining";
+
+// DocumentTableViewCell
+"DocumentTableViewCell.sign" = "Sign";
+"DocumentTableViewCell.deny" = "Cancel";
+"DocumentTableViewCell.show" = "Show";
+
+// DocumentsViewController
+"DocumentsViewController.add_success" = "The URL has been added correctly!";
+"DocumentsViewController.deny_success" = "The document has been canceled correctly!";
+"DocumentsViewController.sign_success" = "The document has been signed correctly!";
+"DocumentsViewController.modify_success" = "The URL has been modified correctly!";
+"DocumentsViewController.delete_success" = "The URL has been deleted correctly!";
+"DocumentsViewController.notKeysSetted" = "Please set a key to this URL before signing the Document";
+"DocumentsViewController.signingDocumentFailed" = "Signing process failed, error at server response";
+"DocumentsViewController.signingDocumentSuccess" = "Document has been successfully signed";
+"DocumentsViewController.cancelingDocumentFailed" = "Deny process failed, error at server response";
+"DocumentsViewController.cancelingDocumentSuccess" = "Document has been successfully denied";
+
+// HistoryViewController
+"HistoryViewController.title" = "History";
+"HistoryViewController.signed" = "Signed";
+"HistoryViewController.denied" = "Canceled";
+
+// SignedViewController
+"SignedViewController.date_ini" = "Start";
+"SignedViewController.date_end" = "End";
+"SignedViewController.url" = "URL";
+"SignedViewController.size" = "Size";
+"SignedViewController.search" = "Search";
+"SignedViewController.from" = "From";
+"SignedViewController.to" = "To";
+"SignedViewController.obs" = "Observations";
+"SignedViewController.range" = "Date Range";
+"SignedViewController.FirstDateAlert" = "Wrong Date Range: Initial Date greater than Final Date";
+"SignedViewController.MissingFirstDate" = "Fill in the missing date field: Start ";
+"SignedViewController.MissingSecondDate" = "Fill in the missing date field: End ";
+
+
+// KeysViewController
+"KeysViewController.title" = "Keys";
+"KeysViewController.add_key" = "Add key";
+"KeysViewController.modified_success" = "Key modified correctly!";
+"KeysViewController.added_success" = "Key added correctly!";
+"KeysViewController.delete_success" = "Key deleted correctly!";
+"KeysViewController.emptyKeys" = "Not a valid selection, choose -cer or .key Files";
+
+// KeyViewController
+"KeyViewController.title_add" = "Add key";
+"KeyViewController.title_modify" = "Edit key";
+"KeyViewController.name" = "Key name";
+"KeyViewController.import_key" = "Import key...";
+"KeyViewController.add_key" = "Add";
+"KeyViewController.save_key" = "Guardar";
+
+//KeyPasswordViewController
+"KeyPasswordViewController.title_add" = "Please insert the password for adding the key";
+"KeyPasswordViewController.title_modify" = "Please insert the password to modify the key";
+"KeyPasswordViewController.title_delete" = "Please insert the password to delete the key";
+"KeyPasswordViewController.title_delete1" = "You are going to delete the key ";
+"KeyPasswordViewController.title_delete2" = ", please insert the password to continue";
+"KeyPasswordViewController.password" = "Password";
+"KeyPasswordViewController.show_password" = "Show Password";
+"KeyPasswordViewController.remind_password" = "Remind Password";
+"KeyPasswordViewController.security" = "Due to security reasons It's recomended adding the password manually";
+"KeyPasswordViewController.add" = "Add";
+"KeyPasswordViewController.modify" = "Save";
+"KeyPasswordViewController.delete" = "Delete";
+"KeyPasswordViewController.cancel" = "Cancel";
+"KeyPasswordViewController.wrongKeys" = "Not matching cer and key Files with user. Please replace Them";
+"KeyPasswordViewController.missingCerFile" = "Missing Cer File. Import it from your Cloud [*.cer]";
+"KeyPasswordViewController.missingKeyFile" = "Missing Key File. Import it from your Cloud [*.key]";
+"KeyPasswordViewController.missingCer&KeyFiles" = "Missing .cer and .key files. To continue please import them from your Cloud";
+"KeyPasswordViewController.missingNameField" = "Please fill the Name of Key field";
+
+// ImportKeyViewController
+"ImportKeyViewController.open" = "Open with...";
+"ImportKeyViewController.icloud" = "iCloud";
+"ImportKeyViewController.itunes" = "iTunes";
+"ImportKeyViewController.delete" = "Delete Key";
+"ImportKeyViewController.fileValidation" = "Not a valid selection, choose .cer or .key Files";
+
+// HistoryViewController
+"HistoryViewController.add_url" = "Add URL";
+"HistoryViewController.history" = "History";
+"HistoryViewController.notData" = "Not data found for date range";
+
+// DatePicker
+"DatePicker.done" = "Done";
+"DatePicker.remove" = "Remove";

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FileView" customModule="FirmApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUp-Ca-U0b">
+                    <rect key="frame" x="0.0" y="2" width="600" height="26"/>
+                    <subviews>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcA-cw-XP8">
+                            <rect key="frame" x="572" y="3" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="3Kl-Np-2aI"/>
+                                <constraint firstAttribute="width" constant="20" id="KTO-zf-8xd"/>
+                            </constraints>
+                            <state key="normal" image="icon-delete-round"/>
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="EUZ-WM-xUG"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwS-G9-Eb7">
+                            <rect key="frame" x="8" y="3" width="556" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="fwS-G9-Eb7" firstAttribute="top" secondItem="bUp-Ca-U0b" secondAttribute="top" constant="3" id="9fm-Jj-GKH"/>
+                        <constraint firstAttribute="trailing" secondItem="WcA-cw-XP8" secondAttribute="trailing" constant="8" id="Lcd-bk-iBJ"/>
+                        <constraint firstItem="WcA-cw-XP8" firstAttribute="leading" secondItem="fwS-G9-Eb7" secondAttribute="trailing" constant="8" id="m7c-6j-OZL"/>
+                        <constraint firstItem="fwS-G9-Eb7" firstAttribute="leading" secondItem="bUp-Ca-U0b" secondAttribute="leading" constant="8" id="nG2-d0-PQq"/>
+                        <constraint firstItem="WcA-cw-XP8" firstAttribute="top" secondItem="bUp-Ca-U0b" secondAttribute="top" constant="3" id="o52-Wi-bws"/>
+                        <constraint firstAttribute="height" constant="26" id="sPb-oc-fLy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bUp-Ca-U0b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="0F6-sb-Hsy"/>
+                <constraint firstAttribute="trailing" secondItem="bUp-Ca-U0b" secondAttribute="trailing" id="Bpb-T4-zws"/>
+                <constraint firstItem="bUp-Ca-U0b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nCo-Qy-lLe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deleteButton" destination="WcA-cw-XP8" id="pcc-x3-lUe"/>
+                <outlet property="fileName" destination="fwS-G9-Eb7" id="hWf-DZ-RKP"/>
+                <outlet property="roundView" destination="bUp-Ca-U0b" id="yyL-aE-quv"/>
+            </connections>
+            <point key="canvasLocation" x="340" y="-67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-delete-round" width="64" height="64"/>
+    </resources>
+</document>

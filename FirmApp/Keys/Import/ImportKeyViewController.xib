@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImportKeyViewController" customModule="FirmApp" customModuleProvider="target">
+            <connections>
+                <outlet property="iCloudButton" destination="bY3-XI-ezp" id="AVP-NR-mEK"/>
+                <outlet property="iTunesButton" destination="ag9-Ge-1OS" id="CWk-24-ggh"/>
+                <outlet property="openWithLabel" destination="Awf-lQ-aif" id="SFt-0K-kHH"/>
+                <outlet property="transparentBackgroundView" destination="99B-BU-I80" id="vzC-lj-Xc7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99B-BU-I80" userLabel="Transparent Background">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMJ-U0-9ey" userLabel="Modal View">
+                    <rect key="frame" x="38" y="97" width="299" height="394"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importar con..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Awf-lQ-aif">
+                            <rect key="frame" x="36" y="43" width="226" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="Xhq-cf-60x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoW-rC-k1t" userLabel="Close Button">
+                            <rect key="frame" x="266" y="8" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="67z-gK-Tlm"/>
+                                <constraint firstAttribute="width" constant="25" id="O2y-2t-JvY"/>
+                            </constraints>
+                            <state key="normal" image="icon-close"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="ETx-al-TcL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY3-XI-ezp">
+                            <rect key="frame" x="36" y="95" width="226" height="43"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="4YY-Eq-knD"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="ICLOUD" image="icon-icloud">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="2iP-f6-aYd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ag9-Ge-1OS">
+                            <rect key="frame" x="36" y="146" width="226" height="43"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="a6p-vB-Sma"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="ITUNES" image="icon-itunes">
+                                <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="2g3-E4-GcZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ag9-Ge-1OS" firstAttribute="top" secondItem="bY3-XI-ezp" secondAttribute="bottom" constant="8" id="8tr-90-Sw2"/>
+                        <constraint firstItem="RoW-rC-k1t" firstAttribute="top" secondItem="wMJ-U0-9ey" secondAttribute="top" constant="8" id="9FS-1u-bY1"/>
+                        <constraint firstItem="Awf-lQ-aif" firstAttribute="leading" secondItem="wMJ-U0-9ey" secondAttribute="leading" constant="36" id="JUp-hY-aAx"/>
+                        <constraint firstItem="bY3-XI-ezp" firstAttribute="leading" secondItem="wMJ-U0-9ey" secondAttribute="leading" constant="36" id="LuI-Xk-t6J"/>
+                        <constraint firstAttribute="trailing" secondItem="bY3-XI-ezp" secondAttribute="trailing" constant="37" id="O6i-Os-wCM"/>
+                        <constraint firstItem="ag9-Ge-1OS" firstAttribute="leading" secondItem="wMJ-U0-9ey" secondAttribute="leading" constant="36" id="Vxs-TW-p3s"/>
+                        <constraint firstAttribute="trailing" secondItem="RoW-rC-k1t" secondAttribute="trailing" constant="8" id="feU-Go-vha"/>
+                        <constraint firstItem="bY3-XI-ezp" firstAttribute="top" secondItem="Awf-lQ-aif" secondAttribute="bottom" constant="3" id="jDI-ZT-1sn"/>
+                        <constraint firstItem="Awf-lQ-aif" firstAttribute="top" secondItem="wMJ-U0-9ey" secondAttribute="top" constant="43" id="udS-4w-oSf"/>
+                        <constraint firstAttribute="trailing" secondItem="Awf-lQ-aif" secondAttribute="trailing" constant="37" id="umn-iw-YeF"/>
+                        <constraint firstAttribute="trailing" secondItem="ag9-Ge-1OS" secondAttribute="trailing" constant="37" id="yqW-3y-w9x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wMJ-U0-9ey" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="3ae-lK-eEG"/>
+                <constraint firstItem="99B-BU-I80" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OJU-mF-WqS"/>
+                <constraint firstAttribute="bottom" secondItem="99B-BU-I80" secondAttribute="bottom" id="OKd-Ff-qLV"/>
+                <constraint firstAttribute="trailing" secondItem="wMJ-U0-9ey" secondAttribute="trailing" constant="38" id="VBd-Qt-gk6"/>
+                <constraint firstItem="99B-BU-I80" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VbM-2F-TuK"/>
+                <constraint firstItem="wMJ-U0-9ey" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="XzQ-Ir-rXE"/>
+                <constraint firstAttribute="bottom" secondItem="wMJ-U0-9ey" secondAttribute="bottom" constant="176" id="ZQd-T5-wH4"/>
+                <constraint firstAttribute="trailing" secondItem="99B-BU-I80" secondAttribute="trailing" id="bJx-MR-Syp"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-close" width="33" height="33"/>
+        <image name="icon-icloud" width="30" height="30"/>
+        <image name="icon-itunes" width="30" height="30"/>
+    </resources>
+</document>

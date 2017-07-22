@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePicker" customModule="FirmApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-xm-6ih">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="56W-M0-T3o"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Remove" id="bLB-Pc-J2j">
+                            <connections>
+                                <action selector="removeButtonPressed:" destination="iN0-l3-epB" id="g3I-GC-Q6B"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="S6n-xd-fN6"/>
+                        <barButtonItem title="Done" id="F9t-fH-nUs">
+                            <connections>
+                                <action selector="DoneButtonPressed:" destination="iN0-l3-epB" id="h0L-Vn-Nsg"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="HzX-6E-HrZ">
+                    <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="BUN-FD-n6K"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="483259338.00860202">
+                        <!--2016-04-25 06:42:18 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="datePickerValueChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="mjh-bt-Kkp"/>
+                    </connections>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HzX-6E-HrZ" firstAttribute="top" secondItem="Gdm-xm-6ih" secondAttribute="bottom" id="3pc-Np-c0t"/>
+                <constraint firstItem="HzX-6E-HrZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6xs-tv-wMV"/>
+                <constraint firstItem="Gdm-xm-6ih" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QXC-dA-TgJ"/>
+                <constraint firstItem="HzX-6E-HrZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XSN-bX-Izr"/>
+                <constraint firstItem="Gdm-xm-6ih" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hdR-ej-P9D"/>
+                <constraint firstAttribute="bottom" secondItem="HzX-6E-HrZ" secondAttribute="bottom" id="rcS-64-wc3"/>
+                <constraint firstAttribute="trailing" secondItem="Gdm-xm-6ih" secondAttribute="trailing" id="z0A-9P-ILg"/>
+                <constraint firstAttribute="trailing" secondItem="HzX-6E-HrZ" secondAttribute="trailing" id="zgF-ow-mPQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6xs-tv-wMV"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="doneBarButton" destination="F9t-fH-nUs" id="hS7-Pd-Pl6"/>
+                <outlet property="removeBarButton" destination="bLB-Pc-J2j" id="qGT-6I-SB1"/>
+            </connections>
+        </view>
+    </objects>
+</document>

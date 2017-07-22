@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DocumentsViewController" customModule="FirmApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addUrlButton" destination="6i6-OH-Ij6" id="flb-Px-LwE"/>
+                <outlet property="historyButton" destination="cuw-Pd-aqA" id="QsB-6T-ZfA"/>
+                <outlet property="operationBorderView" destination="2C6-Qa-vcY" id="s7R-GY-opG"/>
+                <outlet property="operationImageView" destination="u2p-8L-7Ui" id="ywX-Dg-Kxe"/>
+                <outlet property="operationInfoHeightConstraint" destination="ANF-Ti-mgz" id="wD9-9v-Tdu"/>
+                <outlet property="operationLabel" destination="U3Y-PN-8WY" id="z4x-1F-qAQ"/>
+                <outlet property="tableView" destination="4be-u1-0rt" id="Wqm-Mh-zKN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-EV-wil" userLabel="Operation Info">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2C6-Qa-vcY">
+                            <rect key="frame" x="8" y="8" width="359" height="37"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-success" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-8L-7Ui">
+                                    <rect key="frame" x="9" y="6" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="Yrc-T3-uyj"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made Successfully" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="U3Y-PN-8WY">
+                                    <rect key="frame" x="42" y="6" width="309" height="25"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="u2p-8L-7Ui" firstAttribute="centerY" secondItem="U3Y-PN-8WY" secondAttribute="centerY" id="15Z-DX-YZK"/>
+                                <constraint firstItem="U3Y-PN-8WY" firstAttribute="top" secondItem="2C6-Qa-vcY" secondAttribute="top" constant="6" id="MxS-v3-DE4"/>
+                                <constraint firstAttribute="bottom" secondItem="u2p-8L-7Ui" secondAttribute="bottom" constant="6" id="d2u-Sm-18l"/>
+                                <constraint firstItem="u2p-8L-7Ui" firstAttribute="top" secondItem="2C6-Qa-vcY" secondAttribute="top" constant="6" id="eLm-if-DdX"/>
+                                <constraint firstItem="U3Y-PN-8WY" firstAttribute="trailing" secondItem="2C6-Qa-vcY" secondAttribute="trailingMargin" id="fE2-Qk-lje"/>
+                                <constraint firstItem="U3Y-PN-8WY" firstAttribute="leading" secondItem="u2p-8L-7Ui" secondAttribute="trailing" constant="8" symbolic="YES" id="gaT-Sy-ZW9"/>
+                                <constraint firstItem="u2p-8L-7Ui" firstAttribute="leading" secondItem="2C6-Qa-vcY" secondAttribute="leading" constant="9" id="yjQ-iK-OfN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="2C6-Qa-vcY" firstAttribute="leading" secondItem="Dac-EV-wil" secondAttribute="leading" constant="8" id="0Az-et-vAZ"/>
+                        <constraint firstItem="2C6-Qa-vcY" firstAttribute="trailing" secondItem="Dac-EV-wil" secondAttribute="trailingMargin" id="7da-ev-Z0a"/>
+                        <constraint firstItem="2C6-Qa-vcY" firstAttribute="top" secondItem="Dac-EV-wil" secondAttribute="top" constant="8" id="FgK-On-XZ6"/>
+                        <constraint firstAttribute="trailing" secondItem="2C6-Qa-vcY" secondAttribute="trailing" constant="8" id="dUA-nM-Y5q"/>
+                        <constraint firstAttribute="bottom" secondItem="2C6-Qa-vcY" secondAttribute="bottom" constant="-45" id="kyi-4O-tFJ"/>
+                        <constraint firstItem="2C6-Qa-vcY" firstAttribute="leading" secondItem="Dac-EV-wil" secondAttribute="leadingMargin" id="nQR-G1-5kh"/>
+                        <constraint firstAttribute="height" id="uot-7P-xUL"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4be-u1-0rt">
+                    <rect key="frame" x="0.0" y="50" width="375" height="569"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AEG-sZ-ePj"/>
+                        <outlet property="delegate" destination="-1" id="DjG-OI-O0x"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6i6-OH-Ij6">
+                    <rect key="frame" x="0.0" y="627" width="187.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yb3-XQ-TTV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Añadir URL" image="icon-add-blue">
+                        <color key="titleColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addUrlButtonTapped:" destination="-1" eventType="touchUpInside" id="L79-1J-5jz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuw-Pd-aqA">
+                    <rect key="frame" x="187.5" y="627" width="187.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Odz-do-Vm5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Historial" image="icon-history-blue">
+                        <color key="titleColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="historyButtonTapped:" destination="-1" eventType="touchUpInside" id="mff-mh-Cw9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Dac-EV-wil" secondAttribute="trailing" id="11Y-qp-q60"/>
+                <constraint firstItem="4be-u1-0rt" firstAttribute="top" secondItem="Dac-EV-wil" secondAttribute="bottom" constant="50" id="ANF-Ti-mgz"/>
+                <constraint firstItem="6i6-OH-Ij6" firstAttribute="width" secondItem="cuw-Pd-aqA" secondAttribute="width" id="Btr-de-7cR"/>
+                <constraint firstItem="Dac-EV-wil" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Go8-9S-u8f"/>
+                <constraint firstAttribute="bottom" secondItem="cuw-Pd-aqA" secondAttribute="bottom" id="Hci-SZ-yQF"/>
+                <constraint firstItem="cuw-Pd-aqA" firstAttribute="leading" secondItem="6i6-OH-Ij6" secondAttribute="trailing" id="Jam-9t-hHz"/>
+                <constraint firstAttribute="bottom" secondItem="6i6-OH-Ij6" secondAttribute="bottom" id="Uo0-1h-29L"/>
+                <constraint firstItem="Dac-EV-wil" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YNl-IR-njy"/>
+                <constraint firstItem="cuw-Pd-aqA" firstAttribute="top" secondItem="4be-u1-0rt" secondAttribute="bottom" constant="8" id="abB-53-466"/>
+                <constraint firstItem="6i6-OH-Ij6" firstAttribute="top" secondItem="4be-u1-0rt" secondAttribute="bottom" constant="8" id="ijw-hW-HNL"/>
+                <constraint firstItem="6i6-OH-Ij6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uNP-Au-urh"/>
+                <constraint firstItem="Dac-EV-wil" firstAttribute="trailing" secondItem="4be-u1-0rt" secondAttribute="trailing" id="xOi-s4-u56"/>
+                <constraint firstAttribute="trailing" secondItem="cuw-Pd-aqA" secondAttribute="trailing" id="yTX-1p-k9U"/>
+                <constraint firstItem="Dac-EV-wil" firstAttribute="leading" secondItem="4be-u1-0rt" secondAttribute="leading" id="zio-zw-wE8"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="241" y="64"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-add-blue" width="30" height="30"/>
+        <image name="icon-history-blue" width="30" height="30"/>
+        <image name="icon-success" width="42" height="42"/>
+    </resources>
+</document>

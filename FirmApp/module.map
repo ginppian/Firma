@@ -1,0 +1,6 @@
+
+module CSgLibSwift [system] {
+    header "sdmobile_Swift.h"
+    link "sglib"
+    export *
+}

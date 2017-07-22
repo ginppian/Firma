@@ -1,0 +1,176 @@
+/*
+ Localizable.strings
+ SeguriData
+ 
+ Created by mikel.sanchez.local on 12/4/16.
+ Copyright © 2016 Babel. All rights reserved.
+ */
+
+"misc.error"            = "Error";
+"misc.ok"               = "Ok";
+"misc.delete"           = "Eliminar";
+"misc.passwordNotSet"   = "Por favor coloque su contraseña";
+"misc.forgetPassword"   = "Olvidar Contraseña";
+"misc.wrongPassword"    = "Es posible que la contraseña sea errónea. Intente de nuevo";
+"misc.missingField"     = "Para continuar complete todos los campos";
+"misc.missingFields"    = "Por favor complete ambos campos para continuar";
+"misc.missingURLName"   = "Por favor complete el nombre de la URL";
+"misc.missingURL"       = "Por favor coloque una URL";
+"misc.insertValidURL"   = "Por favor coloque una URL válida";
+"misc.notResponseFromServer" = "Lo sentimos, no hay respuesta del servidor, verifique sus datos e intente más tarde";
+
+// BaseViewController
+"BaseViewController.exit" = "Salir";
+"BaseViewController.back" = "Atrás";
+
+// SplashViewController
+"SplashViewController.text" = "Firma digital, inteligente y rápida desde tu móvil";
+
+// LoginViewController
+"LoginViewController.user" = "Usuario";
+"LoginViewController.password" = "Contraseña";
+"LoginViewController.show_characters" = "Mostrar caracteres";
+"LoginViewController.session" = "Recordar contraseña";
+"LoginViewController.error_user_pass" = "Por favor introduzca usuario y contraseña";
+"LoginViewController.error_user" = "Campo requerido: Por favor ingrese su usuario";
+"LoginViewController.error_pass" = "Campo requerido: Por favor ingrese su contraseña";
+"LoginViewController.session_warn" = "Por razones de seguridad es recomendable ingresar la contraseña manualmente";
+"LoginViewController.log_in" = "Entrar";
+"LoginViewController.alertNotTypedFields" = "Please";
+"LoginViewController.notValidUser" = "Lo sentimos, no se encuentra el usuario para la URL proporcionada, verifique sus credenciales";
+"LoginViewController.login_URLName" = "Conectando a: ";
+// MainViewController
+"MainViewController.documents" = "Documentos";
+"MainViewController.keys" = "Llaves";
+
+// LogOutViewController
+"LogOutViewController.advice" = "¿Está seguro que desea salir de la aplicación?";
+"LogOutViewController.log_out" = "Salir";
+"LogOutViewController.cancel" = "Cancelar";
+
+
+// URLViewController
+"URLViewController.add_url" = "Añadir URL";
+"URLViewController.url_name" = "Nombre de URL";
+"URLViewController.url" = "URL";
+"URLViewController.add" = "Añadir";
+"URLViewController.asign" = "Asociar Llave";
+"URLViewController.modify_url" = "Modificar URL";
+"URLViewController.save" = "Guardar";
+"URLViewController.delete" = "Eliminar URL";
+
+
+//URLPasswordViewController
+
+"URLPasswordViewController.URLExists" = "Ésta URL ya se encuentra registrada. Modifique para continuar";
+"URLPasswordViewController.URLNameExists" = "Existe una URL registrada con este nombre, Modifique para continuar";
+"URLPasswordViewController.almostOne" = "FirmApp necesita poseer al menos una URL";
+"URLPasswordViewController.title_add" = "Por favor ingrese la contraseña para añadir la URL";
+"URLPasswordViewController.title_modify" = "Por favor ingrese la contraseña para modificar la URL";
+"URLPasswordViewController.title_delete1" = "Va a eliminar la URL";
+"URLPasswordViewController.title_delete2" = "\nPor favor ingrese la contraseña si desea continuar";
+"URLPasswordViewController.title_delete3" = "Por favor ingrese el campo observaciones para su cancelación";
+"URLPasswordViewController.title_sign" = "Por favor ingrese la contraseña para firmar el documento";
+"URLPasswordViewController.title_deny" = "Por favor ingrese la contraseña para continuar la cancelación del documento";
+"URLPasswordViewController.password" = "Contraseña";
+"URLPasswordViewController.show_password" = "Mostrar caracteres";
+"URLPasswordViewController.remind_password" = "Recordar contraseña";
+"URLPasswordViewController.security" = "Por razones de seguridad es recomendable ingresar la contraseña manualmente";
+"URLPasswordViewController.observations" = "Observaciones";
+"URLPasswordViewController.add" = "Añadir";
+"URLPasswordViewController.modify" = "Guardar";
+"URLPasswordViewController.delete" = "Eliminar";
+"URLPasswordViewController.cancel" = "Cancelar";
+"URLPasswordViewController.sign" = "Firmar";
+"URLPasswordViewController.deny" = "Continuar";
+
+// URLTableViewController
+"URLTableViewController.remaining_one" = "pendiente";
+"URLTableViewController.remaining_several" = "pendientes";
+
+// DocumentTableViewCell
+"DocumentTableViewCell.sign" = "Firmar";
+"DocumentTableViewCell.deny" = "Cancelar";
+"DocumentTableViewCell.show" = "Ver";
+
+// DocumentsViewController
+"DocumentsViewController.add_success" = "¡La URL se ha añadido exitosamente!";
+"DocumentsViewController.deny_success" = "¡El documento se ha cancelado exitosamente!";
+"DocumentsViewController.sign_success" = "¡El documento se ha firmado exitosamente!";
+"DocumentsViewController.modify_success" = "¡La URL se ha modificado exitosamente!";
+"DocumentsViewController.delete_success" = "¡La URL se ha eliminado exitosamente!";
+"DocumentsViewController.notKeysSetted" = "Por favor ligue una llave a la URL para realizar la firma del documento";
+"DocumentsViewController.signingDocumentFailed" = "El documento no ha podido ser firmado, error en la respuesta del servidor";
+"DocumentsViewController.signingDocumentSuccess" = "El documento ha sido firmado con éxito ";
+"DocumentsViewController.cancelingDocumentFailed" = "El documento no ha podido ser cancelado, error en la respuesta del servidor";
+"DocumentsViewController.cancelingDocumentSuccess" ="El documento ha sido cancelado con éxito";
+
+// HistoryViewController
+"HistoryViewController.title" = "Historial";
+"HistoryViewController.signed" = "Firmados";
+"HistoryViewController.denied" = "Cancelados";
+
+// SignedViewController
+"SignedViewController.date_ini" = "Inicio";
+"SignedViewController.date_end" = "Fin";
+"SignedViewController.url" = "URL";
+"SignedViewController.size" = "Tamaño";
+"SignedViewController.search" = "Buscar";
+"SignedViewController.from" = "Desde";
+"SignedViewController.to" = "Hasta";
+"SignedViewController.range" = "Rango de fechas";
+"SignedViewController.obs" = "Observaciones";
+"SignedViewController.FirstDateAlert" = "Error en rango de Fechas: La fecha inicial no puede ser mayor que la final";
+"SignedViewController.MissingFirstDate" = "Llene el campo de fecha faltante : Desde ";
+"SignedViewController.MissingSecondDate" = "Llene el campo de fecha faltante : Hasta";
+
+// KeysViewController
+"KeysViewController.title" = "Llaves";
+"KeysViewController.add_key" = "Añadir llave";
+"KeysViewController.modified_success" = "¡La llave se ha modificado exitosamente!";
+"KeysViewController.added_success" = "¡La llave se ha añadido exitosamente!";
+"KeysViewController.delete_success" = "¡La llave se ha eliminado exitosamente!";
+"KeysViewController.emptyKeys" = "No es una selección válida, por favor elija archivos con extensión .cer o.key";
+
+// KeyViewController
+"KeyViewController.title_add" = "Añadir llave";
+"KeyViewController.title_modify" = "Modificar llave";
+"KeyViewController.name" = "Nombre de llave";
+"KeyViewController.import_key" = "Importar llave";
+"KeyViewController.add_key" = "Añadir";
+"KeyViewController.save_key" = "Guardar";
+
+//KeyPasswordViewController
+"KeyPasswordViewController.title_add" = "Por favor ingrese la contraseña para añadir la llave";
+"KeyPasswordViewController.title_modify" = "Por favor ingrese la contraseña para modificar la llave";
+"KeyPasswordViewController.title_delete1" = "Va a eliminar la llave ";
+"KeyPasswordViewController.title_delete2" = "Por favor ingrese la contraseña si deseas continuar";
+"KeyPasswordViewController.password" = "Contraseña";
+"KeyPasswordViewController.show_password" = "Mostrar caracteres";
+"KeyPasswordViewController.remind_password" = "Recordar contraseña";
+"KeyPasswordViewController.security" = "Por razones de seguridad es recomendable ingresar la contraseña manualmente";
+"KeyPasswordViewController.add" = "Añadir";
+"KeyPasswordViewController.modify" = "Guardar";
+"KeyPasswordViewController.delete" = "Eliminar";
+"KeyPasswordViewController.cancel" = "Cancelar";
+"KeyPasswordViewController.wrongKeys" = "Los archivos .cer y .key no corresponden con el usuario. Por favor sustitúyalos para continuar";
+"KeyPasswordViewController.missingCerFile" = "No se encuentra seleccionado el certificado, Importe de su Nube el archivo correspondiente [*.cer]";
+"KeyPasswordViewController.missingKeyFile" = "No se encuentra seleccionada la llave, Importe de su Nube el archivo correspondiente [*.key]";
+"KeyPasswordViewController.missingCer&KeyFiles" = "No se ha seleccionado ningun archivo a ser ligado. Para continuar importe ambos archivos desde su Nube";
+"KeyPasswordViewController.missingNameField" = "Por favor capture el nombre de la Llave";
+
+// ImportKeyViewController
+"ImportKeyViewController.open" = "Abrir con...";
+"ImportKeyViewController.icloud" = "iCloud";
+"ImportKeyViewController.itunes" = "iTunes";
+"ImportKeyViewController.delete" = "Eliminar llave";
+"ImportKeyViewController.fileValidation"= "Selección no válida, elija archivos con la extensión .cer o.key";
+
+// HistoryViewController
+"HistoryViewController.add_url" = "Añadir URL";
+"HistoryViewController.history" = "Historial";
+"HistoryViewController.notData" = "No hay resultados para esta búsqueda";
+
+// DatePicker
+"DatePicker.done" = "Hecho";
+"DatePicker.remove" = "Eliminar";
